@@ -5,9 +5,12 @@ Stylesheet: ベーススタイル
 ******************************************************************/
 
 body {
-  font-family: 'Cormorant Infant', serif;
-  font-family: 'Noto Serif JP', serif;
+  font-family: "Cormorant Infant", serif;
+  font-family: "Noto Serif JP", serif;
   letter-spacing: 1px;
+  &.hidden {
+    overflow: hidden;
+  }
 }
 
 #main-contents {
@@ -45,14 +48,14 @@ a:visited {
 }
 
 .c-txt-sm {
-  font-size: .8rem;
+  font-size: 0.8rem;
   letter-spacing: 2px;
   line-height: 2.3;
   color: $cBlack;
 }
 
 .c-txt-xs {
-  font-size: .7rem;
+  font-size: 0.7rem;
   letter-spacing: 2px;
   line-height: 2;
   color: $cSubBlack;
@@ -82,7 +85,7 @@ a:visited {
 }
 
 .c-sub-head01 {
-  font-size: .9rem;
+  font-size: 0.9rem;
   font-weight: 300;
   letter-spacing: 5px;
   color: $cBlack;
@@ -91,7 +94,7 @@ a:visited {
 .subtitle {
   color: #998969;
   font-size: 1rem;
-  letter-spacing: .25rem;
+  letter-spacing: 0.25rem;
   line-height: 1.5;
   margin-bottom: 5%;
   font-weight: 600;
@@ -123,7 +126,7 @@ a:visited {
     position: absolute;
     bottom: -1px;
     left: 38%;
-    content: '';
+    content: "";
     width: 20vw;
     height: 1px;
     background-color: #85723f;
@@ -133,7 +136,7 @@ a:visited {
 
 .c-item-txt {
   padding-top: 20px;
-  font-size: .8rem;
+  font-size: 0.8rem;
   color: $cSubBlack;
 }
 
@@ -147,7 +150,7 @@ a:visited {
   &::before {
     position: absolute;
     display: block;
-    content: '';
+    content: "";
     background: #f4f4f2;
     min-width: 325px;
     height: 100%;
@@ -170,7 +173,7 @@ a:visited {
   &::before {
     position: absolute;
     display: block;
-    content: '';
+    content: "";
     background: #f4f4f2;
     width: 325px;
     height: 65.5%;
@@ -190,7 +193,7 @@ a:visited {
     padding-left: 30px;
 
     &::before {
-      content: '';
+      content: "";
       display: block;
       position: absolute;
       top: 48%;
@@ -210,7 +213,7 @@ a:visited {
   border-bottom: 1px solid rgb(236, 232, 232);
 
   & a {
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
 }
 
@@ -237,13 +240,13 @@ a:visited {
   position: relative;
   padding-left: 75px;
   margin-bottom: 35px;
-  letter-spacing: .2rem;
+  letter-spacing: 0.2rem;
   font-size: 1.4rem;
 
   &::before {
     position: absolute;
     display: block;
-    content: '';
+    content: "";
     width: 60px;
     height: 60px;
     margin: auto;
@@ -275,7 +278,7 @@ a:visited {
     &::before {
       position: absolute;
       display: block;
-      content: '';
+      content: "";
       top: 0;
       right: 20px;
       bottom: 0;
@@ -315,12 +318,12 @@ a:visited {
     position: relative;
     margin-bottom: 8px;
     font-size: 1.5rem;
-    letter-spacing: .15rem;
-    line-height: 1.0;
+    letter-spacing: 0.15rem;
+    line-height: 1;
 
     &::before {
       display: block;
-      content: '';
+      content: "";
       background: url(../images/common/ico_tel01.png) no-repeat center/contain;
       width: 17px;
       height: 17px;
@@ -330,8 +333,8 @@ a:visited {
 
   &__txt {
     display: block;
-    font-size: .6rem;
-    line-height: 1.0;
+    font-size: 0.6rem;
+    line-height: 1;
   }
 }
 
@@ -347,7 +350,7 @@ a:visited {
   &::before {
     position: absolute;
     display: block;
-    content: '';
+    content: "";
     background: #e3e2dc;
     width: 40px;
     height: 1px;
@@ -383,7 +386,7 @@ a:visited {
 
     &::before {
       display: block;
-      content: '';
+      content: "";
       background-image: url(../images/common/ico_mail01.png);
       background-position: center;
       background-repeat: no-repeat;
@@ -399,7 +402,7 @@ a:visited {
   position: relative;
 
   &::before {
-    content: '';
+    content: "";
     display: block;
     background-image: url(/images/common/icon-map.png);
     background-position: center;
@@ -408,7 +411,6 @@ a:visited {
     height: 17px;
     width: 17px;
   }
-
 }
 
 .icon-tel {
@@ -445,7 +447,7 @@ a:visited {
   padding-bottom: 5px;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -471,7 +473,7 @@ a:visited {
 
   & td {
     line-height: 1.5;
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
 }
 
@@ -530,7 +532,7 @@ a:visited {
       position: absolute;
       top: -79%;
       right: -7vw;
-      content: '';
+      content: "";
       display: block;
       background-color: rgb(250, 248, 248);
       height: 250vh;
@@ -564,7 +566,7 @@ a:visited {
     display: inline-block;
 
     & .small {
-      font-size: .8rem;
+      font-size: 0.8rem;
     }
   }
 }
@@ -596,7 +598,7 @@ a:visited {
     text-transform: uppercase;
     font-size: 4.3em;
     font-weight: bold;
-    letter-spacing: .2em;
+    letter-spacing: 0.2em;
     top: 10px;
     right: 0;
     left: 0;
@@ -628,7 +630,7 @@ a:visited {
       background: #fff;
       color: #998969 !important;
       font-size: 1em;
-      letter-spacing: .25rem;
+      letter-spacing: 0.25rem;
       line-height: 1.5;
     }
   }
@@ -645,7 +647,6 @@ a:visited {
     flex-wrap: wrap;
     justify-content: space-between;
     color: #fff;
-
   }
 
   &__item {
@@ -655,7 +656,7 @@ a:visited {
     height: 40vw;
 
     &::before {
-      content: '';
+      content: "";
       display: block;
       width: 100%;
       height: 100%;
@@ -675,7 +676,6 @@ a:visited {
     }
   }
 
-
   &__btn {
     & .c-btn01__link {
       border: 1px solid #fff;
@@ -684,7 +684,7 @@ a:visited {
       &::before {
         position: absolute;
         display: block;
-        content: '';
+        content: "";
         top: 0;
         right: 20px;
         bottom: 0;
@@ -737,7 +737,7 @@ a:visited {
     left: 3%;
     z-index: 100;
     font-size: 3.5em;
-    letter-spacing: .2em;
+    letter-spacing: 0.2em;
     color: $cBlack;
     margin: 0;
   }
@@ -770,7 +770,7 @@ a:visited {
   }
 }
 
-//access 
+//access
 .p-access {
   padding: 38vw 0 0 0;
   color: $cBlack;
@@ -781,7 +781,7 @@ a:visited {
 
   &__item {
     margin: 30px 0 30px 0;
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
 
   &__tel {
@@ -806,7 +806,7 @@ a:visited {
         padding: 2.7vw;
       }
 
-      font-size: .7rem;
+      font-size: 0.7rem;
     }
 
     tr {
@@ -819,7 +819,7 @@ a:visited {
         padding: 1.8vw;
       }
 
-      font-size: .6rem;
+      font-size: 0.6rem;
       color: rgb(146, 144, 144);
       padding: 2.7vw;
     }
@@ -857,7 +857,7 @@ a:visited {
       position: absolute;
       top: 0;
       left: 0;
-      content: '';
+      content: "";
       display: inline-block;
       height: 15px;
       width: 15px;
@@ -884,7 +884,7 @@ a:visited {
 
     & .ja {
       margin-top: 7vw;
-      font-size: .8rem;
+      font-size: 0.8rem;
       line-height: 5;
     }
   }
@@ -897,7 +897,7 @@ a:visited {
     &::before {
       position: absolute;
       display: block;
-      content: '';
+      content: "";
       top: 0;
       left: 0;
       bottom: 0;
@@ -949,7 +949,7 @@ a:visited {
     height: 100%;
     text-decoration: none;
     padding: 8px 0;
-    font-size: .7rem;
+    font-size: 0.7rem;
     color: rgb(219, 212, 212);
 
     &:visited {
@@ -994,12 +994,13 @@ a:visited {
           align-items: center;
           justify-content: center;
           font-size: 1rem;
-          line-height: 1.0;
+          line-height: 1;
 
           &::before {
             display: block;
-            content: '';
-            background: url(../images/common/ico_reservation01.png) no-repeat center/contain;
+            content: "";
+            background: url(../images/common/ico_reservation01.png) no-repeat
+              center/contain;
             width: 20px;
             height: 20px;
             margin-right: 5px;
@@ -1024,7 +1025,7 @@ a:visited {
   }
 }
 
-//* * * * * * * about-page * * * * * * * * * 
+//* * * * * * * about-page * * * * * * * * *
 .about-policy {
   padding: 150px 0 20px;
 
@@ -1056,7 +1057,7 @@ a:visited {
   &::before {
     position: absolute;
     display: block;
-    content: '';
+    content: "";
     background: #f4f4f2;
     min-width: 325px;
     height: 100%;
@@ -1123,7 +1124,7 @@ a:visited {
       color: #998969;
       font-weight: bold;
       line-height: 1.5;
-      letter-spacing: .25rem;
+      letter-spacing: 0.25rem;
       font-size: 1rem;
     }
   }
@@ -1140,9 +1141,8 @@ a:visited {
   }
 }
 
-//* * * * * * * clinic-page * * * * * * * * * 
+//* * * * * * * clinic-page * * * * * * * * *
 .clinic-content {
-
   .clinic-director {
     padding: 150px 0 60px;
 
@@ -1168,7 +1168,7 @@ a:visited {
       &-name {
         margin-bottom: 10px;
         line-height: 1.8;
-        letter-spacing: .25rem;
+        letter-spacing: 0.25rem;
         font-size: 1.2rem;
       }
 
@@ -1183,14 +1183,13 @@ a:visited {
           display: table;
           margin-right: 15px;
           word-break: keep-all;
-          font-size: .8rem;
+          font-size: 0.8rem;
         }
 
         & dd {
-          font-size: .8rem;
+          font-size: 0.8rem;
         }
       }
-
     }
 
     &-sec {
@@ -1202,7 +1201,7 @@ a:visited {
         &::before {
           position: absolute;
           display: block;
-          content: '';
+          content: "";
           background: #f4f4f2;
           min-width: 325px;
           height: 100%;
@@ -1216,7 +1215,7 @@ a:visited {
       &__head {
         margin-bottom: 15px;
         line-height: 1.6;
-        letter-spacing: .25rem;
+        letter-spacing: 0.25rem;
         font-size: 1.4rem;
         font-weight: 500;
       }
@@ -1232,7 +1231,7 @@ a:visited {
       &__head {
         margin-bottom: 5px;
         color: #998969;
-        letter-spacing: .15rem;
+        letter-spacing: 0.15rem;
         font-size: 1.1rem;
         font-weight: normal;
       }
@@ -1243,7 +1242,7 @@ a:visited {
 
       &__txt {
         margin-top: 20px;
-        letter-spacing: .03em;
+        letter-spacing: 0.03em;
       }
     }
 
@@ -1271,12 +1270,12 @@ a:visited {
         padding-left: 10px;
         font-weight: bold;
         line-height: 1.65;
-        font-size: .8rem;
+        font-size: 0.8rem;
 
         &::before {
           position: absolute;
           display: block;
-          content: '';
+          content: "";
           background: #ae9f80;
           border-radius: 50%;
           width: 5px;
@@ -1284,7 +1283,6 @@ a:visited {
           top: 9px;
           left: 0;
         }
-
       }
     }
   }
@@ -1349,14 +1347,13 @@ a:visited {
       &__head {
         margin-top: 8%;
         line-height: 1.5;
-        letter-spacing: .3rem;
+        letter-spacing: 0.3rem;
         font-size: 1.1rem;
       }
 
       & .c-txt-sm {
         clear: both;
       }
-
     }
   }
 
@@ -1365,7 +1362,7 @@ a:visited {
 
     .c-table01 {
       & table {
-        border-bottom: 1px solid #e3e2dc
+        border-bottom: 1px solid #e3e2dc;
       }
 
       & tr {
@@ -1417,15 +1414,14 @@ a:visited {
       &-head {
         margin-bottom: 15px;
         line-height: 1.6;
-        letter-spacing: .3rem;
+        letter-spacing: 0.3rem;
         font-size: 1rem;
       }
-
     }
   }
 }
 
-//* * * * * * news-page * * * * * * * 
+//* * * * * * news-page * * * * * * *
 .c-news {
   padding: 0 0 10vw 0;
   letter-spacing: 3px;
@@ -1443,9 +1439,8 @@ a:visited {
 
     & p {
       margin-top: 2vw;
-      font-size: .8rem;
+      font-size: 0.8rem;
     }
-
   }
 
   &__date {
@@ -1479,7 +1474,7 @@ a:visited {
       width: 40px;
       height: 40px;
       border-radius: 100%;
-      border: 1px solid #C4CCD1;
+      border: 1px solid #c4ccd1;
       background: #fff;
       margin: 0 1.3vw;
     }
@@ -1503,16 +1498,15 @@ a:visited {
         height: 12px;
         margin-left: 8px;
       }
-
     }
 
-    @media (max-width:767px) {
+    @media (max-width: 767px) {
       & .next {
         display: none;
       }
     }
 
-    @media (min-width:600px) {
+    @media (min-width: 600px) {
       & .page-numbers:not(.next):not(.prev) {
         width: 45px;
         height: 45px;
@@ -1523,7 +1517,7 @@ a:visited {
       }
     }
 
-    @media (min-width:900px) {
+    @media (min-width: 900px) {
       & .page-numbers:not(.next):not(.prev) {
         width: 55px;
         height: 55px;
@@ -1543,7 +1537,7 @@ a:visited {
 
   &__contents {
     line-height: 2;
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
 
   &__title {
@@ -1557,9 +1551,9 @@ a:visited {
   }
 }
 
-//* * * * * * news-single-page * * * * * * * 
+//* * * * * * news-single-page * * * * * * *
 .c-news-sl {
-  padding: 30vw 0 20vw 0;
+  padding: 5vw 0 20vw 0;
 
   & .c-container {
     padding: 5vw 5vw 0 5vw;
@@ -1570,22 +1564,22 @@ a:visited {
   }
 
   &__list {
-    padding: 15vw 0 0 0;
+    padding: 5vw 0 0 0;
   }
 
   &__contents {
-    padding: 20vw 0 10vw 0;
+    padding: 5vw 0 10vw 0;
     line-height: 2.5;
 
     & p {
-      font-size: .8rem;
+      font-size: 0.8rem;
     }
   }
 
   &__link {
     margin: 0 0 10vw 0;
     text-align: right;
-    font-size: .8rem;
+    font-size: 0.8rem;
 
     & a {
       border-bottom: 1px solid rgb(114, 114, 114);
@@ -1593,10 +1587,9 @@ a:visited {
   }
 }
 
-//* * * * * * * rectuit-page * * * * * * * * * 
+//* * * * * * * rectuit-page * * * * * * * * *
 .contents-recruit {
-
-  @media (max-width:599px) {
+  @media (max-width: 599px) {
     th {
       color: $cBlack;
       font-size: 14px;
@@ -1666,7 +1659,6 @@ a:visited {
 
 // * * * * * * * faq-page * * * * * * ** * * *
 .faq-contents {
-
   .faq {
     margin: 10vw 0 15vw 0;
 
@@ -1687,14 +1679,13 @@ a:visited {
       padding: 2.6vw 0 6.6vw 0;
 
       &::before {
-        content: 'Q';
+        content: "Q";
         position: absolute;
         top: 4vw;
         left: 0;
         width: 12px;
         font-size: 20px;
         color: #295282;
-
       }
 
       & span {
@@ -1707,7 +1698,7 @@ a:visited {
         padding-left: 3vw;
 
         &::after {
-          content: '';
+          content: "";
           position: absolute;
           top: -10px;
           bottom: 0;
@@ -1719,26 +1710,22 @@ a:visited {
           background-position: top center;
           background-repeat: no-repeat;
           background-size: 100%;
-          transition: all .2s;
-
+          transition: all 0.2s;
         }
       }
-
     }
 
     & dd {
-
       position: relative;
 
       &::before {
-        content: 'A';
+        content: "A";
         position: absolute;
         top: 1vw;
         left: 0;
         width: 12px;
         font-size: 22px;
         color: #295282;
-
       }
 
       & .m-description-article {
